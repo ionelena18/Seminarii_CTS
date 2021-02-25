@@ -13,7 +13,7 @@ public class Zookeper {
 	
 	public void feed(Animal animal)
 	{
-		System.out.println(this.getNume()+"hraneste"+animal.getNume());
+		System.out.println(this.getNume()+" hraneste "+animal.getNume());
 	}
 
 	public Zookeper(String nume) {
