@@ -5,7 +5,8 @@ import java.util.Arrays;
 public class Angajat extends Aplicant{
 	private String ocupatie;
 	private int salariu;
-	
+	private static float sumaFinantare = 10;
+
 	public String getOcupatie() {
 		return ocupatie;
 	}
@@ -27,21 +28,29 @@ public class Angajat extends Aplicant{
 		super();
 		
 	}
-	
-	
+	public static float getSumaFinantata() {
+		return sumaFinantare;
+	}
+	public static void setSumaFinantare(float sumaFinantare) {
+		Angajat.sumaFinantare = sumaFinantare;
+	}
+
+	@Override
+	public float getSumaFinantare() {
+		return sumaFinantare;
+	}
+
+
 	@Override
 	public String toString() {
-		return "Angajat: Nume=" + nume + ", Prenume=" + prenume
-				+ ", Varsta=" + varsta + ", Punctaj=" + punctaj + ", Nr_proiecte=" + nr_proiecte + ", DenumireProiect="
-				+ Arrays.toString(denumireProiect) + "Ocupatie=" + ocupatie + ", salariu=" + salariu;
+		StringBuilder sb = new StringBuilder();
+		sb.append("Angajat:").append(super.toString()).append("Ocupatie:")
+				.append(ocupatie).append(" Salariu:  ").append(salariu);
+
+		return sb.toString();
 	}
 	
 	
-	public int finantare() {
-		int s=10;
-		// TODO Auto-generated method stub
-		System.out.println("Angajatul "+getNume()+" "+getPrenume()+" primeste"+s+" Euro/zi in proiect.");
-		return s;
-	}
+
 	
 }

@@ -69,4 +69,14 @@ public abstract class Aplicant{
 		this.denumireProiect=denumiriProiecte;
 		this.nr_proiecte=nrProiecte;
 	}
+	public abstract float getSumaFinantare();
+	public void afisareRaspunsProiect(Proiect proiecte){
+		boolean eAcceptat = punctaj >= proiecte.getPragDeAcceptare();
+
+		StringBuilder stringBuilder = new StringBuilder("Aplicantul ").append(nume).append(" ").append(prenume);
+		System.out.println(
+				eAcceptat ? stringBuilder.append(" a fost acceptat") : stringBuilder.append(" a fost respins")
+		);
+
+	}
 }
