@@ -18,9 +18,9 @@ public class Program {
 		System.out.println("Suma finantata pentru angajati"+Angajat.getSumaFinantata());
 		List<Aplicant> listaAplicanti;
 		try {
-			listaAplicanti = citesteAplicanti(new ReaderAngajati("angajati.txt"));
+			listaAplicanti = citesteAplicanti(new ReaderAngajati("Seminar2/angajati.txt"));
 			Proiect proiect = new Proiect(81);
-			listaAplicanti =  citesteAplicanti(new ReaderAngajati("angajati.txt"));
+			listaAplicanti =  citesteAplicanti(new ReaderAngajati("Seminar2/angajati.txt"));
 			for(Aplicant aplicant:listaAplicanti) {
 				System.out.println(aplicant.toString());
 				System.out.println(aplicant.getSumaFinantare());

@@ -24,25 +24,25 @@ public class ReaderAngajati extends IReader {
 	@Override
 	public List<Aplicant> citesteAplicant() throws FileNotFoundException, NumberFormatException {
 	
-		Scanner input2 = new Scanner(new File(super.filePath));
-		input2.useDelimiter(",");
+		Scanner inputAplicant = new Scanner(new File(super.filePath));
+		inputAplicant.useDelimiter(",");
 		List<Aplicant> angajati = new ArrayList<>();
 
-		while (input2.hasNext()) {
-			String nume = input2.next();
-			String prenume = input2.next();
-			int varsta = input2.nextInt();
-			int punctaj = input2.nextInt();
-			int nr = input2.nextInt();
+		while (inputAplicant.hasNext()) {
+			String nume = inputAplicant.next();
+			String prenume = inputAplicant.next();
+			int varsta = inputAplicant.nextInt();
+			int punctaj = inputAplicant.nextInt();
+			int nr = inputAplicant.nextInt();
 			String[] vect = new String[5];
 			for (int i = 0; i < nr; i++)
-				vect[i] = input2.next();
-			int salariu = input2.nextInt();
-			String ocupatie = input2.next();
+				vect[i] = inputAplicant.next();
+			int salariu = inputAplicant.nextInt();
+			String ocupatie = inputAplicant.next();
 			Angajat a = new Angajat(nume, prenume, varsta, punctaj, nr, vect, salariu, ocupatie);
 			angajati.add(a);
 		}
-		input2.close();
+		inputAplicant.close();
 		return angajati;
 	}
 }
