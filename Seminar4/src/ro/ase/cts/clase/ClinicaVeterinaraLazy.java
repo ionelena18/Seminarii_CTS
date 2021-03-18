@@ -1,4 +1,4 @@
-package ro.ase.cts.eager;
+package ro.ase.cts.clase;
 
 public class ClinicaVeterinaraLazy {
     private String nume;
