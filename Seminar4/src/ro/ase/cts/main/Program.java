@@ -13,5 +13,12 @@ public class Program {
         ClinicaVeterinaraLazy clinicaVeterinara2=ClinicaVeterinaraLazy.getInstance("Sante","Libertatii",50,500.5F);
         System.out.println(clinicaVeterinara1);
         System.out.println(clinicaVeterinara2);
+
+
+        clinicaVeterinara1.setNume("Clinica 1");
+        clinicaVeterinara2.setNrMedici(45);
+        System.out.println(clinicaVeterinara1);
+        System.out.println(clinicaVeterinara2);
+
     }
 }
