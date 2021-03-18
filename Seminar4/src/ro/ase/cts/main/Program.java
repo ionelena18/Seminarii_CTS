@@ -2,6 +2,8 @@ package ro.ase.cts.main;
 
 import ro.ase.cts.clase.ClinicaVeterinaraLazy;
 
+import ro.ase.cts.exercitiu.Proiect;
+
 public class Program {
     public static void main(String[] args) {
 //        ClinicaVeterinara clinicaVeterinara1=ClinicaVeterinara.getInstance();
@@ -19,6 +21,19 @@ public class Program {
         clinicaVeterinara2.setNrMedici(45);
         System.out.println(clinicaVeterinara1);
         System.out.println(clinicaVeterinara2);
+
+        Proiect proiect1=Proiect.getInstance("VIP","Marketing",25);
+        Proiect proiect2=Proiect.getInstance("TedTalks","IT",35);
+
+        System.out.println(proiect1);
+        System.out.println(proiect2);
+
+        proiect1.setDepartament("Finante");
+        proiect2.setDenumire("LocalBuget");
+
+        System.out.println(proiect1);
+        System.out.println(proiect2);
+
 
     }
 }
