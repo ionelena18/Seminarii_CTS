@@ -8,6 +8,7 @@ public class Main {
         masa.rezervaMasa();
 
         masa.rezervaMasa();
+        masa.rezervaMasa();
         masa.ocupaMasa();
 
     }

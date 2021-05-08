@@ -1,4 +1,4 @@
-package ro.ase.cts.State;
+package ro.ase.cts.State.Clase;
 
 public class Masa {
     private State state;
@@ -12,7 +12,7 @@ public class Masa {
 
     public Masa(int nrMasa) {
         this.nrMasa = nrMasa;
-        this.state=new StareLibera();
+        this.state= (State) new StareLibera();
     }
 
     public State getState() {

@@ -1,4 +1,4 @@
-package ro.ase.cts.State;
+package ro.ase.cts.State.Clase;
 
 public class StareLibera implements State{
     @Override
