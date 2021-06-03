@@ -1,4 +1,4 @@
-package Observer.Clase;
+package ro.ase.cts.Observer.Clase;
 
 import java.util.ArrayList;
 import java.util.List;

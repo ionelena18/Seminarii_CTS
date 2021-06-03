@@ -1,4 +1,4 @@
-package Observer.Clase;
+package ro.ase.cts.Observer.Clase;
 
 public class Client implements IObservator{
 

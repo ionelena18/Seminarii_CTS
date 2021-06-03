@@ -1,4 +1,4 @@
-package Memento;
+package ro.ase.cts.Memento;
 
 public class Main {
     public static void main(String[] args) {

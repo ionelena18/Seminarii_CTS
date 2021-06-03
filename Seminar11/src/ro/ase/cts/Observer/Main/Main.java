@@ -1,8 +1,8 @@
-package Observer.Main;
+package ro.ase.cts.Observer.Main;
 
-import Observer.Clase.Client;
-import Observer.Clase.IObservator;
-import Observer.Clase.Manager;
+import ro.ase.cts.Observer.Clase.Client;
+import ro.ase.cts.Observer.Clase.IObservator;
+import ro.ase.cts.Observer.Clase.Manager;
 
 public class Main {
     public static void main(String[] args) {

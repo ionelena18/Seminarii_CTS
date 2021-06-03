@@ -1,4 +1,4 @@
-package Template.Clase;
+package ro.ase.cts.Template.Clase;
 
 public class SpectatorVIP extends SpectatorAbstract{
 

@@ -1,4 +1,4 @@
-package Memento;
+package ro.ase.cts.Memento;
 
 public class Memento {
     private int nrSpectatori;

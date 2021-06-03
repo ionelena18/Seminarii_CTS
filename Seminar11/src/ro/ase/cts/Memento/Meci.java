@@ -1,4 +1,4 @@
-package Memento;
+package ro.ase.cts.Memento;
 
 public class Meci {
     private String echipaGazda;

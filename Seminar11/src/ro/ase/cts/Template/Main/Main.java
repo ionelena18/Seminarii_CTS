@@ -1,8 +1,8 @@
-package Template.Main;
+package ro.ase.cts.Template.Main;
 
-import Template.Clase.Spectator;
-import Template.Clase.SpectatorAbstract;
-import Template.Clase.SpectatorVIP;
+import ro.ase.cts.Template.Clase.Spectator;
+import ro.ase.cts.Template.Clase.SpectatorAbstract;
+import ro.ase.cts.Template.Clase.SpectatorVIP;
 
 public class Main {
     public static void main(String[] args) {
